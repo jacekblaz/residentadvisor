@@ -148,7 +148,7 @@ def get_ra_rate(urls_list):
         rates['https://www.residentadvisor.net' + rev_url] = float(text_content[2:5])
     return rates
 
-#export functions need to be run only ones to download RA's website content to local json files:
+#export functions need to be run only once to download RA's website content to local json files:
 
 def export_scores_to_json(reviews_urls):
     scores_dict = {}

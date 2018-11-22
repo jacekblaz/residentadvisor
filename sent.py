@@ -1,5 +1,5 @@
 import json
-from wyszukiwarka import tokenize_dict
+from scrapper import tokenize_dict
 from textblob import TextBlob
 from textblob.sentiments import NaiveBayesAnalyzer
 
