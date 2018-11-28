@@ -6,5 +6,5 @@ This repo contains scrapped reviews, scores and urls in json files. (reviews up 
 <h5>To perform new scrapping:</h5>
 python scrapper.py --mode scrapp
 
-To see analysis results:
+<h5>To see analysis results:</h5>
 python scrapper.py --mode analysis
