@@ -4,6 +4,7 @@ import json
 import matplotlib.pyplot as plt
 import random
 
+
 with open('sentiment.json', 'r') as sentiment_json:
     sentiment = json.load(sentiment_json)
 
@@ -98,3 +99,4 @@ plt.ylabel('Amount of reviews')
 plt.hist(sentiments, bins=np.linspace(-1,1,20))
 
 plt.show()
+
