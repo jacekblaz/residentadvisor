@@ -11,7 +11,6 @@ import time
 import nltk
 import string
 import argparse
-
 import analysis
 
 start_time = time.time()
@@ -186,17 +185,6 @@ def export_scores_to_json(reviews_urls):
         json_file.write('\n')
 
 
-
-with open('rev_urls.json', 'r') as reviews_urls_json:
-    reviews_urls = json.load(reviews_urls_json)
-export_reviews_to_json(reviews_urls)
-
-
-""""
-
-"""
-
-
 def get_args():
     parser = argparse.ArgumentParser()
     parser.add_argument("--mode", type=str)
@@ -217,4 +205,6 @@ if __name__ == "__main__":
         export_scores_to_json(reviews_urls)
 
     if args.mode == "analysis":
-        analysis
+        analysis.show_stats_and_plots()
+else:
+    pass
