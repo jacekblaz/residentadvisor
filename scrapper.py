@@ -12,6 +12,7 @@ import nltk
 import string
 import argparse
 import analysis
+import sent
 
 start_time = time.time()
 
@@ -206,5 +207,7 @@ if __name__ == "__main__":
 
     if args.mode == "analysis":
         analysis.show_stats_and_plots()
+    if args.mode == "neural_net":
+        sent.main()
 else:
     pass

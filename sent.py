@@ -124,12 +124,11 @@ def shallow_network_architecture(num_dim, train_vector, train_labels, validation
 
     model.fit(train_vector, train_labels, epochs=5, batch_size=32)
     loss_and_metrics = model.evaluate(validation_vector, validation_labels, batch_size=128)
-    print(model.metrics_names, loss_and_metrics)
+    print("Validation {}: {}".format(model.metrics_names[1], loss_and_metrics[1]))
 
 def main():
     train_vector, train_labels, validation_vector, validation_labels = preprocessing()
     num_dim = train_vector.shape[1]
     shallow_network_architecture(num_dim, train_vector, train_labels, validation_vector, validation_labels)
-
 if __name__ == "__main__":
     main()
