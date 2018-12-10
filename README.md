@@ -8,3 +8,6 @@ python scrapper.py --mode scrapp
 
 <h5>To see analysis results:</h5>
 python scrapper.py --mode analysis
+
+<h5>To fit neural net:</h5>
+python scrapper.py --mode neural_net
